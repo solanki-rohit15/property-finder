@@ -1,0 +1,28 @@
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+  <div class="sidebar-sticky pt-3">
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <%= link_to "Dashboard", dashboard_path, class: "nav-link active" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Properties", properties_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Reports", dashboard_reports_path, class: "nav-link" %>
+      </li>
+    </ul>
+
+    <h6 class="px-3 mt-4 mb-2 text-muted">Saved reports</h6>
+
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Current month</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Last quarter</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>

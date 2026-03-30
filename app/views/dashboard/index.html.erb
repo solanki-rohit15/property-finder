@@ -1,0 +1,38 @@
+<h2 class="mb-4">Properties</h2>
+
+<div class="card shadow-sm">
+  <div class="card-body">
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% if @properties.present? %>
+          <% @properties.each do |property| %>
+            <tr>
+              <td><%= property.id %></td>
+              <td><%= property.name %></td>
+              <td><%= property.location %></td>
+              <td><%= property.price %></td>
+            </tr>
+          <% end %>
+        <% else %>
+          <tr>
+            <td colspan="4" class="text-center text-muted">
+              No properties found
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>
